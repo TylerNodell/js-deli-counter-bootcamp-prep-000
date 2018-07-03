@@ -1,5 +1,6 @@
 var katzDeli = [];
 var ticketnumber = 0
+var counter = 1
 // function takeANumber(line, name) {
 //   katzDeli = line.push(name)
 //   return `Welcome, ${name}. You are number ${line.length} in line.`
@@ -18,9 +19,13 @@ function nowServing(line) {
   }
 }
 
-function nowServingNubmer(ticketnumber) {
-  for (var i = 1; i <= ticketnumber; i++) {
-    console.log(`Currently serving # ${i}`)
+function nowServingNumber(ticketnumber) {
+  // for (var i; i <= ticketnumber; i++) {
+  //   console.log(`Currently serving # ${i}`)
+  // }
+  while (counter <= ticketnumber) {
+    console.log(`Currently serving ${counter}`);
+    counter++
   }
 }
 
